@@ -1,12 +1,14 @@
 Part 1: Making basic testing work in haskell
 --------------------------------------------
 
-###TLDR:
- - clone me somewhere git clone https://github.com/SunKing2/tdd-haskell-part1.git
- - cd myhspecproj
+### TLDR:
+ - clone me somewhere: git clone https://github.com/SunKing2/tdd-haskell-part1.git
+ - cd tdd-haskell-part1
  - use ghcup to install (don't forget to set!) cabal 3.6.2.0 and GHC 9.28
  - cabal run myhspecproj
  - cabal test --test-show-details=streaming
+
+---
 
 
 We install cabal, haskell ghc, make 3 functions, make some tests, run the tests with cabal (no stack is used here). This is Part 1.  (Part 2 is using HUnit, part 3 is using HSpec.)
@@ -39,8 +41,7 @@ I modified the suggested install so it's unattended. This one doesn't install st
 #### See what's installed
 
 ```bash
-    cd ~
-    du -h -d1 -L .ghcup
+    du -h -d1 -L ~/.ghcup
     ghci --version
     cabal --version
     runhaskell --version
@@ -65,6 +66,7 @@ cabal run myhspecproj
 Run the testing, and it should show that three tests ran, and passed. (It might also give a summary saying that the whole lot of them passed)
 
 ```bash
+alias cabtest='cabal test --test-show-details=streaming'
 cabtest
 ```
     
