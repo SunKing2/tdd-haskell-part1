@@ -2,7 +2,7 @@ Part 1: Making basic testing work in haskell
 --------------------------------------------
 
 ###TLDR:
- - clone me somewhere
+ - clone me somewhere git clone https://github.com/SunKing2/tdd-haskell-part1.git
  - cd myhspecproj
  - use ghcup to install (don't forget to set!) cabal 3.6.2.0 and GHC 9.28
  - cabal run myhspecproj
